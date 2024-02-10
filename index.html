@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClassNote - Your AI-Powered Note-Taking Companion</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a.btn {
+      padding: 10px 20px;
+      background-color: #88ff88;
+      border-radius: 5px;
+    }
+
+    nav ul li a.btn:hover {
+      background-color: #77cc77;
+    }
+
+    #hero {
+      background: url('img.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 150px 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    #hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    #hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    #about {
+      background: #222;
+      color: #fff;
+      padding: 150px 0;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    #about h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #88ff88;
+      font-weight: 700;
+    }
+
+    #about p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    #about ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+    }
+
+    #about ul li {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    #about .btn {
+      margin-top: 20px;
+    }
+
+    #donate {
+      background: #333;
+      color: #fff;
+      padding: 150px 0;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    #donate h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #88ff88;
+      font-weight: 700;
+    }
+
+    #donate p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    #donate .btn {
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ClassNote</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Learn More</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="https://discord.gg/RzkkqS2mYw">Join Discord</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+        <h2 style="color: #6e6e6e;">Your AI-Powered Note-Taking Companion</h2> 
+        <p style="color: #5c5c5c;">Effortlessly create comprehensive notes with ClassNote</p> 
+      </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>ClassNote is your ultimate study buddy, utilizing state-of-the-art artificial intelligence to transform your note-taking experience. Say goodbye to tedious manual note-taking and hello to effortless, organized study sessions.</p>
+      <ul>
+        <li><strong>AI-powered note generation:</strong> Our advanced AI algorithms analyze any topic you input and generate detailed notes with headings and pointers, enabling you to grasp complex concepts with ease.</li>
+        <li><strong>Customizable note formats:</strong> Tailor your notes to suit your preferences and study style.</li>
+        <li><strong>Cloud synchronization:</strong> Access your notes from anywhere, anytime with seamless cloud synchronization.</li>
+        <li><strong>Offline access:</strong> Take your notes with you even when you're offline.</li>
+        <li><strong>Multi-platform support:</strong> ClassNote is available on all your devices, ensuring you have access to your notes wherever you go.</li>
+      </ul>
+      <a href="https://discord.gg/RzkkqS2mYw" class="btn">Join Discord</a>
+    </div>
+  </section>
+
+  <section id="donate">
+    <div class="container">
+      <h2>Donate to Support Us</h2>
+      <p>Your contribution helps us continue improving ClassNote and providing it for free to students worldwide. We appreciate your support!</p>
+      <a href="https://www.paypal.me/mbot27" class="btn">Donate</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 ClassNote. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      let scrollPosition = window.scrollY;
+      let hero = document.getElementById('hero');
+      let about = document.getElementById('about');
+      let donate = document.getElementById('donate');
+
+      hero.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+      about.style.backgroundPositionY = scrollPosition * 0.3 + 'px';
+      donate.style.backgroundPositionY = scrollPosition * 0.2 + 'px';
+    });
+  </script>
+</body>
+</html>
